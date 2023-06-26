@@ -1,3 +1,3 @@
 ### Specialization - Frontend
-Readme file for *alx-frontend-javascript*
+Readme file for *alx-frontend-javascript*  
 Highlight: Frontend
