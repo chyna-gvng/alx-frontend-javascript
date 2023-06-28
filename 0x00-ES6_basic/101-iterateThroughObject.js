@@ -6,7 +6,6 @@ export default function iterateThroughObject(reportWithIterator) {
       result += `${employee} | `;
     }
   
-    // Remove the trailing ' | ' from the string
     result = result.slice(0, -3);
   
     return result;
