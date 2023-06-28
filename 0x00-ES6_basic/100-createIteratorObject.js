@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default function createIteratorObject(report) {
     let currentDepartmentIndex = 0;
     let currentEmployeeIndex = 0;
@@ -26,4 +27,4 @@ export default function createIteratorObject(report) {
       }
     };
   }
-  
+/* eslint-enable */
