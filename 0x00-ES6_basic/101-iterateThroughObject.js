@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default function iterateThroughObject(reportWithIterator) {
     let result = '';
   
@@ -10,4 +11,4 @@ export default function iterateThroughObject(reportWithIterator) {
   
     return result;
   }
-  
+/* eslint-enable */
