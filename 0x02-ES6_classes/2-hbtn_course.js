@@ -29,14 +29,14 @@ export default class HolbertonCourse {
     });
     this._students = newStudents;
   }
-    
-    get name() {
-      return this._name;
-    }
+
+  get name() {
+    return this._name;
+  }
   
-    get length() {
-      return this._length;
-    }
+  get length() {
+    return this._length;
+  }
   
     get students() {
       return this._students;
