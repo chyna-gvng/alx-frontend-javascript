@@ -16,12 +16,12 @@ export default class HolbertonCourse {
     if (Object.getPrototypeOf(newName) !== String.prototype) throw TypeError('name must be a string');
     this._name = newName;
   }
-  
+
   set length(newLen) {
     if (Object.getPrototypeOf(newLen) !== Number.prototype) throw TypeError('length must be a number');
     this._length = newLen;
   }
-  
+
     set students(newStudents) {
       if (Object.getPrototypeOf(newStudents) !== Array.prototype) throw TypeError('students must be an array');
       newStudents.forEach((student) => {
