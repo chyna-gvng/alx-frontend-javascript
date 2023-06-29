@@ -12,5 +12,4 @@ export default class EVCar extends Car {
     const clone = new NewObj();
     return clone;
   }
-
 }
