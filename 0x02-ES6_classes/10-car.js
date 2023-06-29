@@ -24,3 +24,4 @@ export default class Car {
   console.log(tc1 instanceof TestCar);
   console.log(tc2 instanceof TestCar);
   console.log(tc1 == tc2); */
+  
