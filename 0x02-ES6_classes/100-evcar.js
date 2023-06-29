@@ -12,4 +12,3 @@ export default class EVCar extends Car {
     return Car;
   }
 }
-/* eslint-enable no-underscore-dangle */
