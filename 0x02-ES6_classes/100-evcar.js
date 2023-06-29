@@ -14,4 +14,4 @@ export default class EVCar extends Car {
     return clone;
   }
 }
-/*eslint-enable*/
+/* eslint-enable */
