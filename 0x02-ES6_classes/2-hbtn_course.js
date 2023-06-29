@@ -22,13 +22,13 @@ export default class HolbertonCourse {
     this._length = newLen;
   }
 
-    set students(newStudents) {
-      if (Object.getPrototypeOf(newStudents) !== Array.prototype) throw TypeError('students must be an array');
-      newStudents.forEach((student) => {
-        if (Object.getPrototypeOf(student) !== String.prototype) throw TypeError('students must be an array of strings');
-      });
-      this._students = newStudents;
-    }
+  set students(newStudents) {
+    if (Object.getPrototypeOf(newStudents) !== Array.prototype) throw TypeError('students must be an array');
+    newStudents.forEach((student) => {
+    if (Object.getPrototypeOf(student) !== String.prototype) throw TypeError('students must be an array of strings');
+    });
+    this._students = newStudents;
+  }
     
     get name() {
       return this._name;
