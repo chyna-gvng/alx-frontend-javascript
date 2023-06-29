@@ -1,12 +1,9 @@
 export default class Car {
     constructor(brand, motor, color) {
-      // Create objs
       this._brand = brand;
       this._motor = motor;
       this._color = color;
     }
-  
-    // Methods
   
     cloneCar() {
       const NewObj = this.constructor[Symbol.species] || this.constructor;
@@ -14,7 +11,4 @@ export default class Car {
       return clone;
     }
   
-    // Setters
-  
-    // Getters
   }
