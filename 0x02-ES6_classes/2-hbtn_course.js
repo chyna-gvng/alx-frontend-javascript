@@ -7,10 +7,10 @@ export default class HolbertonCourse {
       if (Object.getPrototypeOf(student) !== String.prototype) throw TypeError('students must be an array of strings');
     });
 
-      this._name = name;
-      this._length = length;
-      this._students = students;
-    }
+    this._name = name;
+    this._length = length;
+    this._students = students;
+  }
   
     set name(newName) {
       if (Object.getPrototypeOf(newName) !== String.prototype) throw TypeError('name must be a string');
