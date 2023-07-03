@@ -10,4 +10,3 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
     return { ...student, grade: newGrade ? newGrade.grade : 'N/A' };
   });
 }
-
