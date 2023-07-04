@@ -6,4 +6,3 @@ export default function cleanSet(set, startString) {
     .map((el) => el.slice(startString.length))
     .join('-');
 }
-
