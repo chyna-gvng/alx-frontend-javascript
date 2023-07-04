@@ -6,5 +6,3 @@ export default function cleanSet(set, startString) {
   });
   return result.slice(0, result.length - 1);
 }
-
-// Path: 0x03-ES6_data_manipulation/9-generate_iterator.js
