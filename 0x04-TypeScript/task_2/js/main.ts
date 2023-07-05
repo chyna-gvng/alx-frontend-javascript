@@ -35,7 +35,7 @@ class Teacher implements TeacherInterface {
 }
 
 function createEmployee(firstName: string, lastName: string, salary: number | string ): Director | Teacher {
-  if(salary as number && salary < 500) {
+  if(salary as number && salary < '500') {
     return new Teacher();
   }
   else {
@@ -43,9 +43,9 @@ function createEmployee(firstName: string, lastName: string, salary: number | st
   }
 }
 
-console.log(createEmployee('Camilo ', 'Torres ', 200));
-console.log(createEmployee('Simon ', 'Bolivar ', 1000));
-console.log(createEmployee('Antonio ','Nariño ', '$500'));
+console.log(createEmployee('Erling ', 'Haaland ', '200'));
+console.log(createEmployee('Declan ', 'Rice ', '1000'));
+console.log(createEmployee('Antonio ','Conte ', '500'));
 
 function isDirector(employee: Director | Teacher): employee is Director {
   return (employee instanceof Director) ? true : false;
@@ -54,8 +54,8 @@ function isDirector(employee: Director | Teacher): employee is Director {
 function executeWork(employee: Director | Teacher): string {
   return isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks();
 }
-console.log(executeWork(createEmployee('Camilo ', 'Torres ', 200)));
-console.log(executeWork(createEmployee('Simon  ', 'Bolivar ', 1000)));
+console.log(executeWork(createEmployee('Erling ', 'Haaland ', '200')));
+console.log(executeWork(createEmployee('Declan  ', 'Rice ', '1000')));
 
 type Subjects = 'Math' | 'History';
 function teachClass(todayClass: Subjects): string {
