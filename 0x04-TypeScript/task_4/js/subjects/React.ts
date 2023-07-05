@@ -1,5 +1,5 @@
-  namespace Subjects {
-    class React extends Subjects.Subject {
+namespace Subjects {
+    export class React extends Subjects.Subject {
       getRequirements() {
         return "Here is the list of requirements for React";
       }
@@ -13,5 +13,4 @@
       }
     }
   }
-
-export default Subjects;
+  
