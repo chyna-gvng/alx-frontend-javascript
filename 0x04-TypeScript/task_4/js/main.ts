@@ -1,39 +1,24 @@
-interface Student {
-  firstName: string;
-  lastName: string;
-  age: number;
-  location: string;
-}
+export const cpp: Subjects.Cpp = new Subjects.Cpp();
+export const java:Subjects.Java = new Subjects.Java();
+export const react: Subjects.React = new Subjects.React();
 
-const firstStudent: Student = {
-  firstName: 'Chyna',
-  lastName: 'Gvng',
-  age: 18,
-  location: 'Beijing',
-}
+export const cTeacher: Subjects.Teacher = {
+  firstName: "Guillaume",
+  lastName: "Salva",
+  experienceTeachingC: 10,
+};
 
-const secondStudent: Student = {
-  firstName: 'Vicks',
-  lastName: 'Batch',
-  age: 16,
-  location: 'Mogadishu',
-}
+console.log("C++");
+cpp.setTeacher(cTeacher);
+console.log(cpp.getRequirements());
+console.log(cpp.getAvailableTeacher());
 
-const studentsList: Array<Student> = [firstStudent, secondStudent]
+console.log("Java");
+java.setTeacher(cTeacher);
+console.log(java.getRequirements());
+console.log(java.getAvailableTeacher());
 
-const newTable = document.createElement('table');
-const bodyTable = document.createElement('body');
-
-studentsList.forEach((obj) => {
-  const myrow = document.createElement('row');
-  const cellstName = document.createElement('tfn');
-  const cellLocation = document.createElement('tlc');
-  cellstName.textContent = obj.firstName;
-  cellLocation.textContent =obj.location;
-  myrow.appendChild(cellstName);
-  myrow.appendChild(cellLocation);
-  bodyTable.appendChild(myrow);
-});
-
-newTable.appendChild(bodyTable);
-document.body.appendChild(newTable);
+console.log("React");
+react.setTeacher(cTeacher);
+console.log(react.getRequirements());
+console.log(react.getAvailableTeacher());
