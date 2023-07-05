@@ -6,17 +6,17 @@ interface Student {
   }
   
   const firstStudent: Student = {
-    firstName: 'Matias',
-    lastName: 'Correa',
-    age: 13,
-    location: 'Mosquera',
+    firstName: 'Chyna',
+    lastName: 'Gvng',
+    age: 22,
+    location: 'Unknown',
   }
   
   const secondStudent: Student = {
-    firstName: 'Daniel',
-    lastName: 'Garzon',
-    age: 14,
-    location: 'Bogota',
+    firstName: 'Vicks',
+    lastName: 'Batch',
+    age: 26,
+    location: 'Nakuru',
   }
   
   const studentsList: Array<Student> = [firstStudent, secondStudent]
@@ -37,3 +37,4 @@ interface Student {
   
   newTable.appendChild(bodyTable);
   document.body.appendChild(newTable);
+  
