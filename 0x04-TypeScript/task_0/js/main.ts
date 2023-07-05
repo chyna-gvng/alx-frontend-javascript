@@ -9,7 +9,7 @@ interface Student {
     firstName: 'Chyna',
     lastName: 'Gvng',
     age: 22,
-    location: 'Unknown',
+    location: 'Beijing',
   }
   
   const secondStudent: Student = {
@@ -37,4 +37,3 @@ interface Student {
   
   newTable.appendChild(bodyTable);
   document.body.appendChild(newTable);
-  
