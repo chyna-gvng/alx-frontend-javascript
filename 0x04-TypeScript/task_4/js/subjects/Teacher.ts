@@ -2,7 +2,7 @@ namespace Subjects {
     export interface Teacher {
       firstName: string;
       lastName: string;
-      experienceTeachingCpp?: number;
+      experienceTeachingC?: number;
       experienceTeachingJava?: number;
       experienceTeachingReact?: number;
     }
